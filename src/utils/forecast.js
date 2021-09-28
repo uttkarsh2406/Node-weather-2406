@@ -10,7 +10,7 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             
-            callback(undefined,response.body.current.weather_descriptions[0] +". it is currently "+response.body.current.temperature+" degree out. It feels like " +response.body.current.feelslike+ " degree")
+            callback("It is currently "+response.body.current.temperature+" degree out. It feels like " +response.body.current.feelslike+ " degree. Weather is "+response.body.current.weather_descriptions[0]+" here.And Pressure here is "+response.body.current.pressure+"mbar")
             
         }
     })
