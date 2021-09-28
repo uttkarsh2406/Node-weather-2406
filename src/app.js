@@ -110,5 +110,5 @@ app.get('*',(req,res)=>{
 
 })
 app.listen(port,()=>{
-    console.log("Our Server is up at "+port);
+    console.log("Our Server is up at port "+port);
 }); 
