@@ -33,6 +33,7 @@ weatherform.addEventListener('submit',(event)=>{
         if(data.error){
             mess1.textContent=data.error;
         }
+        
         else{
              mess1.textContent=data.location
              mess2.textContent=data.forecast
